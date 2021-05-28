@@ -44,6 +44,36 @@ const Container = styled.div`
   :hover {
     background-color: #e9eaeb;
   }
+  @media (max-width: 1077px) {
+    p {
+      font-size: 18px;
+    }
+  @media (max-width: 918px) {
+    p {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 764px) {
+    p {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 690px) {
+    p {
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 604px) {
+    p {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 524px) {
+    padding: 15px;
+    p {
+      display: none;
+    }
+  }
 `;
 
 const UserAvatar = styled(Avatar)`

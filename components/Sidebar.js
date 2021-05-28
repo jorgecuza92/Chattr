@@ -73,7 +73,7 @@ const Container = styled.div`
   flex: 0.45;
   border-right: 1px solid whitesmoke;
   height: 100vh;
-  min-width: 300px;
+  /* min-width: 300px; */
   max-width: 350px;
   overflow-y: scroll;
 
@@ -83,6 +83,26 @@ const Container = styled.div`
 
   -ms-overflow-style: none;
   scrollbar-width: none;
+  @media (max-width: 678px) {
+    min-width: 200px;
+    max-width: 200px;
+    font-size: 14px;
+  }
+  @media (max-width: 524px) {
+    min-width: fit-content;
+    justify-content: center;
+    p {
+      color: transparent
+    }
+    padding: 0em;
+    input {
+      display: none;
+      
+    }
+    span {
+      font-size: 12px;
+    }
+  }
 `;
 
 const Search = styled.div`
@@ -90,6 +110,10 @@ const Search = styled.div`
   align-items: center;
   padding: 20px;
   border-radius: 2px;
+  @media (max-width: 524px) {
+   display: none;
+  }
+  
 `;
 const SidebarButton = styled(Button)`
   width: 100%;
@@ -97,12 +121,20 @@ const SidebarButton = styled(Button)`
     border-top: 1px solid whitesmoke;
     border-bottom: 1px solid whitesmoke;
   }
+  @media (max-width: 524px) {
+      font-size: 14px;
+      overflow: hidden;
+    }
+  
 `;
 
 const SearchInput = styled.input`
   outline-width: 0;
   border: none;
   flex: 1;
+ 
+  }
+
 `;
 
 const Header = styled.div`
@@ -123,6 +155,15 @@ const UserAvatar = styled(Avatar)`
   :hover {
     opacity: 0.8;
   }
+  @media (max-width: 524px) {
+    /* padding: 0; */
+    justify-content: center;
+  }
 `;
 
-const IconsContainer = styled.div``;
+const IconsContainer = styled.div`
+@media (max-width: 526px) {
+  display: none;
+}
+
+`;

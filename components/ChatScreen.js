@@ -143,6 +143,25 @@ const Header = styled.div`
   height: 80px;
   align-items: center;
   border-bottom: 1px solid whitesmoke;
+  @media (max-width: 678px) {
+    /* font-size: 14px; */
+  }
+  @media( max-width: 578px) {
+    font-size: 16px;
+    
+  }
+  @media( max-width: 472px) {
+    font-size: 14px;
+    
+  }
+  @media( max-width: 432px) {
+    font-size: 12px;
+    
+  }
+  @media( max-width: 402px) {
+    font-size: 10px;
+    
+  }
 `;
 
 const HeaderInformation = styled.div`
@@ -157,9 +176,19 @@ const HeaderInformation = styled.div`
     font-size: 14px;
     color: gray;
   }
+  @media (max-width: 524px) {
+    h3 {
+      text-overflow: hidden;
+    }
+  }
 `;
 
-const HeaderIcons = styled.div``;
+const HeaderIcons = styled.div`
+  @media (max-width: 794px) {
+    display: none;
+    justify-content: center;
+  }
+`;
 
 const EndOfMessage = styled.div`
   margin-bottom: 50px;
@@ -191,6 +220,11 @@ const InputContainer = styled.form`
   bottom: 0;
   background-color: white;
   z-index: 100;
+  @media (max-width: 426px) {
+    svg {
+      display: none;
+    }
+  }
 
 `;
 
